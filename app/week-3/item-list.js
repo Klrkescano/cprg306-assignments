@@ -92,16 +92,14 @@ const ItemList = () => {
   return (
     <>
       <ul>
-        <li>
-          {items.map((item, i) => (
-            <Item
-              key={i}
-              name={item.name}
-              quantity={item.quantity}
-              category={item.category}
-            />
-          ))}
-        </li>
+        {items.map((item, i) => (
+          <Item
+            key={i}
+            name={item.name}
+            quantity={item.quantity}
+            category={item.category}
+          />
+        ))}
       </ul>
     </>
   );
